@@ -6,7 +6,7 @@ console.log(nome, "casou-se com Maria em 2012.");
 console.log("Maria teve 1 filho de", nome, "em 2015.");
 console.log("O filho de", nome, "se chama Eduardo.");
 
-let nome; // Declarou a variável
+/* let nome; // Declarou a variável
 nome = 'João'; //Inicializando a Variável
 console.log(nome);
 nome = 'Otávio';
@@ -36,4 +36,5 @@ nomeCliente = 'Otávio';
 
 console.log(nomeCliente);
 
-// NÃO UTILIZE VAR, UTILIZE LET.
+// NÃO UTILIZE VAR, UTILIZE LET. 
+*/
