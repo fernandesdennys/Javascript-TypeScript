@@ -11,9 +11,9 @@ const peso = 84;
 const altura = 1.8;
 const imc = peso / (altura * altura);
 console.log(imc);
-const anoNascimento = 2025 - 30;
+const anoNascimento = 2025 - idade;
 console.log(anoNascimento);
 
-console.log(`${nome} ${sobrenome} tem ${idade} anos, pesa ${peso} kg, 
-Tem ${altura} de altura e seu IMC é de ${imc}. 
+console.log(`${nome} ${sobrenome} tem ${idade} anos, pesa ${peso}kg, 
+tem ${altura} de altura e seu IMC é de ${imc}. 
 ${nome} ${sobrenome} nasceu em ${anoNascimento}`);
