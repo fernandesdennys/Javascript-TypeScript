@@ -1,4 +1,4 @@
-//TIPOS DE DATOS PRIMITIVOS (string, number, undefined, null, boolean, symbol)
+//TIPOS DE DADOS PRIMITIVOS (string, number, undefined, null, boolean, symbol)
 
 const nome = "Luiz"; // string
 const nome1 = "Luiz"; // string
