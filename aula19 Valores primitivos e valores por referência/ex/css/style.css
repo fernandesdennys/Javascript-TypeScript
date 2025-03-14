@@ -1,0 +1,33 @@
+body {
+  background-color: gray;
+  font-family: "Courier New", Courier, monospace;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+label {
+  font-weight: bolder;
+  margin: 5px;
+}
+input {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+input#button {
+  width: 100px;
+}
+
+div#res {
+  font-family: monospace;
+  text-align: center;
+  font-size: 1.5em;
+}
