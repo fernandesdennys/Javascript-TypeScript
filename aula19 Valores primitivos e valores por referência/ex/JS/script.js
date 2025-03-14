@@ -24,8 +24,8 @@ function clicar() {
 
   // Adicionamos o evento corretamente  
   form.addEventListener('submit', recebeEventoForm);
-
 };
+
 clicar()
 
 /*
