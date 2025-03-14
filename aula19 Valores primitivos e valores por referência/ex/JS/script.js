@@ -11,7 +11,7 @@ function clicar() {
     const sobrenome = form.querySelector('#txtSobrenome');
     const peso = form.querySelector('#txtPeso');
     const altura = form.querySelector('#txtAltura');
-    
+
     // Criamos o objeto com os valores no momento do submit
     const resFrom = {
       nome: nome.value,
@@ -23,10 +23,8 @@ function clicar() {
     // Adicionamos ao array
     pessoas.push(resFrom)
     resultado.innerHTML += (`<p>${nome.value} ${sobrenome.value} ${peso.value} ${altura.value}</p>`)
-    // Resetamos o formulário
-    form.reset();
-    // Exibimos o array no console
-    console.log(pessoas);
+    form.reset(); // Resetamos o formulário
+  
   }
   // Adicionamos o evento corretamente  
   form.addEventListener('submit', recebeEventoForm);
