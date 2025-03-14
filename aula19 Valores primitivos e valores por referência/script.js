@@ -1,3 +1,12 @@
+const a = {
+  nome: 'Dennys',
+  sobrenome: 'Fernandes'
+};
+const b = { ...a }; // O Valor de "a" foi copiado para o valor de "b" (spread do array a dentro de b)
+a.nome = 'Ricardo'; // Altera o valor dome dentro da "-const a"
+console.log(a);
+console.log(b);
+
 /*
 Tipos de Dados Primitivos (Imutáveis - Valores copiados):
 * string: 'Dennys',
@@ -11,17 +20,6 @@ Referência (multável - Passados por referência)
 * arrays 
 * object 
 * function
-*/
-const a = {
-  nome: 'Dennys',
-  sobrenome: 'Fernandes'
-};
-const b = { ...a }; // O Valor de "a" foi copiado para o valor de "b" (spread do array a dentro de b)
-a.nome = 'Ricardo'; // Altera o valor dome dentro da "-const a"
-console.log(a);
-console.log(b);
-
-/*
 
 let a = [1, 2, 3];
 let b = [...a]; // O Valor de "a" foi copiado para o valor de "b" (spread do array a dentro de b)
