@@ -27,6 +27,28 @@ section.container {
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.596);
 }
+section > h1 {
+  font-size: 2em;
+}
+
+div#table {
+  margin-top: 20px;
+  margin: auto;
+  display: flex;
+}
+div#imc,
+#classificacao {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+label {
+  font-size: 1em;
+  font-weight: bold;
+  color: #00a2ff;
+}
+
 form {
   margin-top: 20px;
 }
@@ -43,23 +65,32 @@ form > label > input {
   border-radius: 5px;
 }
 
-form > button {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  width: 150px;
+#reset {
+  background-color: #ff0000;
+  margin-top: 10px;
   padding: 10px;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 5px;
-  background-color: #333;
   color: #fff;
+}
+#calc {
+  background-color: #009efa;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+#calc:hover, #reset:hover {
+  background-color: #b3b3b3;
   cursor: pointer;
 }
-form > button:hover {
-  background-color: #6e6b6b;
-  outline: 2px solid #000000;
-  color: #000000;
+div#res {
+  font-size: 1em;
+  font-weight: bold;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
 }

@@ -8,52 +8,50 @@
   </head>
   <body>
     <section class="container">
-      <h1>Lorem ipsum dolor sit amet consectetur</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nemo
-        facilis eaque vel deleniti dicta illum sint aliquid eum molestias
-        laboriosam, ullam architecto, enim optio dolorem minima laudantium quae
-        officiis.
-      </p>
+      <h1>Tabela IMC</h1>
+      <div id="table">
+        <div id="imc">
+          <h2>IMC</h2>
+          <p>Menos do que 18,5</p>
+          <p>Entre 18,5 e 24,9</p>
+          <p>Entre 25,0 e 29,9</p>
+          <p>Entre 30,0 e 39,9</p>
+          <p>Maior que 40,0</p>
+        </div>
+        <div id="classificacao">
+          <h2>Resultado</h2>
+          <p>Abaixo do peso</p>
+          <p>Peso normal</p>
+          <p>Sobrepeso 1</p>
+          <p>Obesidade grau 2</p>
+          <p>Obesidade grau 3</p>
+        </div>
+      </div>
 
       <form action="">
         <label for="input-test- 1"
-          >Label test #1
+          >Peso:(ex. 68.7)
           <input
             type="text"
-            id="input-test-1"
+            id="txtpeso"
             name="input-test-1"
-            placeholder="Digite algo"
+            placeholder="Digite seu peso"
           />
         </label>
         <label for="input-test-2"
-          >Label test #2
+          >Altura:(ex. 1.70)
           <input
             type="text"
-            id="input-test-2"
+            id="txtaltura"
             name="input-test-2"
-            placeholder="Digite algo"
+            placeholder="Digite sua altura"
           />
         </label>
-        <label for="input-test-3"
-          >Label test #3
-          <input
-            type="text"
-            id="input-test-3"
-            name="input-test-3"
-            placeholder="Digite algo"
-          />
-        </label>
-        <label for="input-test-4"
-          >Label test #4
-          <input
-            type="text"
-            id="input-test-4"
-            name="input-test-4"
-            placeholder="Digite algo"
-          />
-        </label>
-        <button type="button">Enviar</button>
+
+        <button id="calc" type="button" onclick="clicar()">Calcular</button>
+        <button id="reset" type="reset">Limpar</button>
+
+        <div id="res"></div>
       </form>
     </section>
     <script src="assets/js/script.js"></script>
