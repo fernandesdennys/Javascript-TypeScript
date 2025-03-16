@@ -1,0 +1,107 @@
+@charset 'UTF-8';
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+section.container {
+  width: 500px;
+  height: 550px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  text-indent: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.596);
+}
+section > h1 {
+  margin: auto;
+  font-size: 2em;
+}
+
+div#table {
+  background-color: #d3d3d3;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin: auto;
+  display: flex;
+}
+#classificacao {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+label {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #00a2ff;
+}
+
+form {
+  margin-top: 20px;
+}
+form > label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form > label > input {
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#reset {
+  background-color: #ff0000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+#calc {
+  background-color: #009efa;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+#calc:hover, #reset:hover {
+  background-color: rgba(0, 0, 0, 0.500);
+  cursor: pointer;
+}
+input::placeholder {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+div#res {
+  font-size: 1em;
+  font-weight: bold;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.paragrafo-resultado {
+  background-color: #8dffbc;
+}
