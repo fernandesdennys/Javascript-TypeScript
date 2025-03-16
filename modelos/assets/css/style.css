@@ -17,7 +17,7 @@ body {
 }
 section.container {
   width: 500px;
-  height: 600px;
+  height: 550px;
   margin: 0 auto;
   margin-top: 50px;
   padding: 20px;
@@ -28,23 +28,24 @@ section.container {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.596);
 }
 section > h1 {
+  margin: auto;
   font-size: 2em;
 }
 
 div#table {
+  background-color: #d3d3d3;
+  border-radius: 20px;
   margin-top: 20px;
   margin: auto;
   display: flex;
 }
-div#imc,
 #classificacao {
   margin: auto;
   width: 50%;
   padding: 10px;
-  background-color: #f4f4f4;
 }
 label {
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: bold;
   color: #00a2ff;
 }
@@ -67,6 +68,7 @@ form > label > input {
 
 #reset {
   background-color: #ff0000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
   margin-top: 10px;
   padding: 10px;
   border: none;
@@ -75,6 +77,7 @@ form > label > input {
 }
 #calc {
   background-color: #009efa;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
   margin-top: 10px;
   padding: 10px;
   border: none;
@@ -82,8 +85,13 @@ form > label > input {
   color: #fff;
 }
 #calc:hover, #reset:hover {
-  background-color: #b3b3b3;
+  background-color: rgba(0, 0, 0, 0.500);
   cursor: pointer;
+}
+input::placeholder {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
 }
 div#res {
   font-size: 1em;

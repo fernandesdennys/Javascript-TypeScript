@@ -4,8 +4,8 @@ function clicar() {
   const resultado = document.getElementById('res');
   const imc = (peso / (altura * altura));
 
-  if (peso === '' || altura === '') {
-    resultado.innerHTML = 'Preencha todos os campos!';
+  if (peso === '' || altura === '' || isNaN(peso) || isNaN(altura)) {
+    resultado.innerHTML = 'Por favor, insira valores numéricos válidos em ambos os campos!';
   } else if (imc <= 18.5) {
     resultado.innerHTML = 'Abaixo do peso!';
   } else if (imc >= 18.5 && imc <= 24.9) {
