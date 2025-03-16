@@ -1,0 +1,65 @@
+@charset 'UTF-8';
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+section.container {
+  width: 500px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  text-indent: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.596);
+}
+form {
+  margin-top: 20px;
+}
+form > label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form > label > input {
+  width: 60%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form > button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+form > button:hover {
+  background-color: #6e6b6b;
+  outline: 2px solid #000000;
+  color: #000000;
+}
