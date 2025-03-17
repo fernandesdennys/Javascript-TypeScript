@@ -29,12 +29,29 @@
       </div>
 
       <form action="/" id="formulario" method="post">
-      <label for="peso">Peso</label>
-      <input type="text" id="peso" name="peso" placeholder="Digite seu peso" />
-      <label for="altura">Altura</label>
-      <input type="text" id="altura" name="altura" placeholder="Digite sua altura" />
-      <button type="submit" id="calc">Enviar</button>
-      <div id="resultado"></div>
+        <label for="peso">Peso: (ex. 68.7)</label>
+        <input
+          type="text"
+          id="peso"
+          class="input"
+          name="peso"
+          placeholder="Digite seu peso"
+        />
+        <label for="altura">Altura: (ex. 1.70)</label>
+        <input
+          type="text"
+          id="altura"
+          class="input"
+          name="altura"
+          placeholder="Digite sua altura"
+        />
+
+        <div id="button">
+          <button type="submit" id="calc">Enviar</button>
+          <button id="reset" type="reset">Limpar</button>
+        </div>
+
+        <div id="resultado"></div>
       </form>
     </section>
     <script src="/resultado-ex/scriptprof.js"></script>

@@ -17,7 +17,7 @@ body {
 }
 section.container {
   width: 500px;
-  height: 550px;
+  height: 600px;
   margin: 0 auto;
   margin-top: 50px;
   padding: 20px;
@@ -51,41 +51,48 @@ label {
 }
 
 form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
 }
-form > label {
+.input {
+  text-align: center;
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #00a2ff;
+}
+div#button {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin: auto;
+  margin-top: 20px;
 }
-form > label > input {
-  width: 60%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
 #reset {
+  width: 100px;
   background-color: #ff0000;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
-  margin-top: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-left: 5px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   color: #fff;
 }
 #calc {
+  width: 100px;
   background-color: #009efa;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
-  margin-top: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-right: 5px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   color: #fff;
 }
-#calc:hover, #reset:hover {
-  background-color: rgba(0, 0, 0, 0.500);
+#calc:hover,
+#reset:hover {
+  background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 input::placeholder {
@@ -102,6 +109,15 @@ div#res {
   padding: 5px;
   border-radius: 5px;
 }
-.paragrafo-resultado {
+.paragrafo-resultado,
+.bad {
+  border-radius: 20px;
   background-color: #8dffbc;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+.bad {
+  background-color: #ff8d8d;
 }

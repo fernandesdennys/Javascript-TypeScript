@@ -68,7 +68,7 @@ form > label > input {
 
 #reset {
   background-color: #ff0000;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin-top: 10px;
   padding: 10px;
   border: none;
@@ -77,15 +77,16 @@ form > label > input {
 }
 #calc {
   background-color: #009efa;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   margin-top: 10px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   color: #fff;
 }
-#calc:hover, #reset:hover {
-  background-color: rgba(0, 0, 0, 0.500);
+#calc:hover,
+#reset:hover {
+  background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 input::placeholder {
