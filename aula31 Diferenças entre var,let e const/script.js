@@ -1,3 +1,16 @@
+function falaOi() {
+  let nome = 'Luiz';
+  console.log(nome);
+  let sobrenome = 'Miranda'; // criando
+}
+falaOi();
+var nome = 'Qualquer coisa'; // criando
+console.log(nome, sobrenome); // erro, sobrenome is not defined
+// var é global e poderá ser acessada em qualquer lugar
+// let e const são locais e só funcionam no escopo onde foi criada
+// console.log(nome, sobrenome); // erro, sobrenome is not defined
+
+
 /* const verdadeiro = true;
 // let tem escopo de bloco { ... bloco }
 // var só tem escopo de função
@@ -24,12 +37,15 @@ if (verdadeiro) {
 function falaOi() {
   const nome = 'João'; // criando
   console.log(nome);
-} */
-
-function falaOi() {
-  if (verdadeiro) {
-    let sobrenome = 'Miranda'; // criando
-    var sobrenome2 = 'Silva'; // redeclarando
+  const verdadeiro = true;
+  function falaOi() {
+    if (verdadeiro) {
+      let nome = 'Luiz'; // criando
+      var sobrenome2 = 'Miranda'; // redeclarando
+      console.log(nome, sobrenome2); // Let só funnciona dentro do bloco "Function"
+    }
+    console.log(nome, sobrenome2); // var funciona fora do bloco "Function"
   }
- console.log(sobrenome, sobrenome2);
-}
+  falaOi()
+  } 
+  */
