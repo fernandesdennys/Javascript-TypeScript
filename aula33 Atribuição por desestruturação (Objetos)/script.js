@@ -8,18 +8,13 @@ const pessoa = {
   }
 };
 const {
-  endereco: { rua: r = 12345 , numero: n }, // Valor padrão para a variável ex:(r = 12345)
+  endereco: { rua: r = 12345, numero: n }, // Valor padrão para a variável ex:(r = 12345)
   endereco
 } = pessoa;
 console.log(r, n, endereco);
 
-const {nome, sobrenome, ...resto} = pessoa; // Pega o nome e o resto do objeto
+const { nome, sobrenome, ...resto } = pessoa; // Pega o nome e o resto do objeto
 console.log(nome, sobrenome, resto);
-
-
-
-
-
 
 /*  
 (ATRIBUIÇÃO VIA DESESTRUTURAÇÃO)
@@ -40,6 +35,5 @@ console.log(nome, sobrenome, idade);
 
 // variável nome recebe o valor de pessoa.nome
 // const nome = pessoa.nome;
-// console.log(nome); 
-
+// console.log(nome);
 */
