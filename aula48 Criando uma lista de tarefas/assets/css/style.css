@@ -7,7 +7,13 @@
 }
 
 body {
-  background-color: rgb(54, 54, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #e0e0e0;
+  font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -15,11 +21,10 @@ h1 {
   flex-flow: column nowrap;
 }
 .container {
-  background-color: rgb(255, 255, 255);
+  background: #ffffff;
   box-shadow: 0px 0px 20px rgb(255, 208, 0);
   border-radius: 30px;
   font-size: 1.5em;
-  
   width: 50%;
   margin: auto;
   padding: 30px;
@@ -27,4 +32,25 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.glass-button {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #000;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(110, 110, 110, 0.664);
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1),
+    inset 0 2px 4px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15),
+    inset 0 2px 6px rgba(255, 255, 255, 0.6);
 }
