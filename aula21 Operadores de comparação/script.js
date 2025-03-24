@@ -4,7 +4,7 @@ OPERADORES DE COMPARAÇÃO
 > maior que
 >= maior que ou igual a (maior ou igual para retornar um valor (true/false))
 < menor que
-<= menor que ou igual a (meno ou igual para retornar um valor (true/false))
+<= menor que ou igual a (menor ou igual para retornar um valor (true/false))
 == igualdade (valor) **********
 === igualdade estrita (valor e tipo)
 != diferente (valor) **********
