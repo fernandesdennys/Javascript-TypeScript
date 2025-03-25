@@ -22,13 +22,6 @@ function relogio() {
   document.addEventListener('click', function (e) {
     const elm = e.target;
 
-    if (elm.classList.contains('zerar')) {
-      clearInterval(timer);
-      relogio.innerHTML = '00:00:00';
-      relogio.classList.remove('pausado')
-      seconds = 0;
-    }
-
     if (elm.classList.contains('iniciar')) {
       relogio.classList.remove('pausado')
       clearInterval(timer);
@@ -39,6 +32,14 @@ function relogio() {
       relogio.classList.add('pausado')
       clearInterval(timer);
     }
+
+    if (elm.classList.contains('zerar')) {
+      clearInterval(timer);
+      relogio.innerHTML = '00:00:00';
+      relogio.classList.remove('pausado')
+      seconds = 0;
+    }
+
   });
 }
 relogio();

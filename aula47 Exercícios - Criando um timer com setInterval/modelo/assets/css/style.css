@@ -6,9 +6,19 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #004d57b6;
-  color: #333;
+  background-image: url(../img/pexels-imagenbruja-7423974.jpg);
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000b6;
+
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.6;
   margin: 0;
@@ -16,24 +26,51 @@ body {
 }
 section.container {
   width: 700px;
-  height: 250px;
-  margin: 0 auto;
+  height: 400px;
   margin-top: 50px;
   padding: 20px;
   text-indent: 20px;
   text-align: center;
-  background-color: #fff;
+  background-color: #ffffff00;
   border-radius: 30px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.596);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.767);
+  box-shadow: 0 0 30px rgb(255, 255, 255, 0.767);
 }
 h1 {
-  font-size: 2.5em;
+  margin-bottom: 0px;
+  margin-top: 40px;
+  font-size: 3.5em;
 }
 .relogio {
+  margin-top: 0px;
   font-size: 4em;
 }
-.pausado {
-  color: red;
+button {
+  width: 100px;
+  color: white;
+  padding: 10px;
+  margin: auto;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  backdrop-filter: 10px;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  border: 2px solid rgba(255, 255, 255, 0.274);
+  background-color: rgba(170, 170, 170, 0.247);
 }
-
-
+.pausado {
+  color: rgb(170, 170, 170);
+}
+button.pausar {
+  margin: 0px 20px 0px 20px;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.relogio {
+  padding-top: 0px;
+  
+}
