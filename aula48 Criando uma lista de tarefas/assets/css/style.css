@@ -12,7 +12,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: #e0e0e0;
+  background: #000000;
   font-family: Arial, sans-serif;
 }
 
@@ -20,9 +20,14 @@ h1 {
   margin-bottom: 50px;
   flex-flow: column nowrap;
 }
+
 .container {
-  background: #ffffff;
-  box-shadow: 0px 0px 20px rgb(255, 208, 0);
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  background: #838383;
+  box-shadow: 0px 0px 20px #ffa600;
+  border: ridge 2px #ffa600;
   border-radius: 30px;
   font-size: 1.5em;
   width: 50%;
@@ -33,13 +38,25 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.glass-button {
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.input-tarefa {
+  min-width: 100px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.btn-tarefa {
   padding: 10px 20px;
   font-size: 15px;
-  color: #000;
-  background: rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(110, 110, 110, 0.664);
+  color: #000000;
+  background: rgba(255, 255, 255, 0.63);
+  border: 2px solid rgba(17, 17, 17, 0.548);
   border-radius: 50px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -49,8 +66,7 @@ h1 {
   transition: all 0.2s ease-in-out;
 }
 
-.glass-button:hover {
+.btn-tarefa:hover {
   background: rgba(255, 255, 255, 0);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15),
-    inset 0 2px 6px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15), inset gray;
 }
