@@ -1,0 +1,110 @@
+@charset 'UTF-8';
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização geral */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #121212; /* Fundo escuro para um visual moderno */
+  font-family: 'Inter', sans-serif; /* Fonte mais moderna */
+  color: #ffffff; /* Texto branco para contraste */
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1e1e1e; /* Fundo levemente mais claro que o body */
+  box-shadow: 0 0px 10px #ffa600;
+  border-radius: 12px;
+  padding: 24px;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Título */
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* Campo de entrada */
+.input-tarefa {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #252525;
+  color: #fff;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input-tarefa:focus {
+  border-color: #ffa600;
+}
+
+/* Botão de adicionar tarefa */
+.btn-tarefa {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  background: #ffa600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-tarefa:hover {
+  background: #ff8c00;
+}
+
+/* Lista de tarefas */
+.tarefas {
+  width: 100%;
+  margin-top: 16px;
+  list-style: none;
+}
+
+.tarefas li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-top: 8px;
+  background: #252525;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Botão de apagar tarefa */
+.apagar {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background: #ff3b30;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.apagar:hover {
+  background: #d32f2f;
+}
