@@ -55,7 +55,7 @@ conta('*', 0, 20, 30, 40)
 
 console.log('---------------------');
 
-const conta0 = function(operador, acumulador, ...numeros) {
+const conta0 = function (operador, acumulador, ...numeros) {
   console.log(arguments);
 };
 conta0('+', 1, 20, 30, 40, 50);
