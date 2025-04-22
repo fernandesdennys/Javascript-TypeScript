@@ -18,10 +18,7 @@ funcao(1, 2, 3) //<-- Argumento são valores que voce envia para os parâmetros
 
 console.log('---------------------');
 
-function funcao1(a, b = 2, c = 4) {
-  console.log(a + b + c)
-}
-funcao1(2, undefined, 20)
+c // <-- Enviando undefined ele define o valor padrão para "undefined"
 
 console.log('---------------------');
 
