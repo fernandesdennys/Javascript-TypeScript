@@ -21,8 +21,13 @@ console.log(countBy(2, 5));  // Exibe no console o resultado da função para x 
 
 
 function inverter(valor) {
-  if (typeof valor === "boolean") return !valor;
-  if (typeof valor === "number") return -valor;
-  return null; 
-  }
-  console.log(inverter(true))
+  if (typeof valor === "boolean")
+    return !valor;
+  else if (typeof valor === "number")
+    return -valor;
+  else null;
+}
+console.log(inverter(true))
+console.log(inverter(10))
+
+
