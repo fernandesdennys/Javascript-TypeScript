@@ -1,4 +1,4 @@
-function countBy (x,n) { 
+/* function countBy (x,n) { 
  let z = [];
  if (x ** n) {
 return z;
@@ -17,4 +17,17 @@ function countBy(x, n) {
   return z; // Retorna o array z com os múltiplos calculados
 }
 console.log(countBy(1, 10)); // Exibe no console o resultado da função para x = 1 e n = 10
-console.log(countBy(2, 5));  // Exibe no console o resultado da função para x = 2 e n = 5
+console.log(countBy(2, 5));  // Exibe no console o resultado da função para x = 2 e n = 5 */
+
+
+function inverter(valor) {
+  if (typeof valor === "boolean")
+    return !valor;
+  else if (typeof valor === "number")
+    return -valor;
+  else null;
+}
+console.log(inverter(true))
+console.log(inverter(10))
+
+
