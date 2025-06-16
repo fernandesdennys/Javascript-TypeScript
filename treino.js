@@ -19,7 +19,7 @@ function countBy(x, n) {
 console.log(countBy(1, 10)); // Exibe no console o resultado da função para x = 1 e n = 10
 console.log(countBy(2, 5));  // Exibe no console o resultado da função para x = 2 e n = 5 */
 
-
+/* 
 function inverter(valor) {
   if (typeof valor === "boolean")
     return !valor;
@@ -29,5 +29,15 @@ function inverter(valor) {
 }
 console.log(inverter(true))
 console.log(inverter(10))
+ */
 
-
+function aleatorio() {
+  const numeros = [];
+  if (aleatorio > 10 && aleatorio < 0) return 'Somente números de 0 à 10';
+  for (let i = 0; i < 10; i++) {
+    const aleatorio = Math.floor(Math.random() * 10) + 1;
+    numeros.push(aleatorio)
+  }
+  return numeros;
+}
+console.log(aleatorio())
