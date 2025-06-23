@@ -20,7 +20,7 @@ console.log(countBy(1, 10)); // Exibe no console o resultado da função para x 
 console.log(countBy(2, 5));  // Exibe no console o resultado da função para x = 2 e n = 5 */
 
 
-function inverter(valor) {
+/* function inverter(valor) {
   if (typeof valor === "boolean")
     return !valor;
   else if (typeof valor === "number")
@@ -28,6 +28,12 @@ function inverter(valor) {
   else null;
 }
 console.log(inverter(true))
-console.log(inverter(10))
+console.log(inverter(10)) */
+
+const n = 3.14159
+const raio = 2.00
+const A = n * (raio, 2)
+
+console.log(`A=${A.toFixed(4)}`)
 
 
